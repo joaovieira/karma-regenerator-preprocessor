@@ -1,24 +1,24 @@
 {
-  "name": "karma-coffee-preprocessor",
-  "version": "0.2.1",
-  "description": "A Karma plugin. Compile coffee script on the fly.",
+  "name": "karma-regenerator-preprocessor",
+  "version": "0.1.0",
+  "description": "A Karma plugin. Compile regenerator on the fly.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/karma-runner/karma-coffee-preprocessor.git"
+    "url": "git://github.com/FieldDayTech/karma-regenerator-preprocessor.git"
   },
   "keywords": [
     "karma-plugin",
     "karma-preprocessor",
-    "coffee-script",
-    "coffee"
+    "es6",
+    "regenerator"
   ],
-  "author": "Vojta Jina <vojta.jina@gmail.com>",
+  "author": "Nate Murray <nate@fieldday.ag>",
   "dependencies": {
-    "coffee-script": "~1.7"
+    "regenerator": "~0.6.7"
   },
   "peerDependencies": {
     "karma": ">=0.11.14"
@@ -31,6 +31,7 @@
     "grunt-auto-release": "~0.0.2"
   },
   "contributors": [
+    "Vojta Jina <vojta.jina@gmail.com>",
     "Friedel Ziegelmayer <friedel.ziegelmayer@gmail.com>",
     "Niall Smart <niall@pobox.com>",
     "Zachary Wright Heller <zheller@gmail.com>",
