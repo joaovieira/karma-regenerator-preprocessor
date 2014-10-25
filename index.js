@@ -23,10 +23,11 @@ var createRegeneratorPreprocessor = function(args, config, logger, helper) {
     try {
       result = regenerator.compile(content, opts);
     } catch (e) {
-      log.error('%s\n  at %s:%d', e.message, file.originalPath, e.location.first_line);
+      log.error('%s\n  at %s:%d:%d', e.description, file.originalPath, e.lineNumber, e.column);
       return done(e, null);
     }
 
+    // console.log(result.code);
     done(null, result.code || result);
   };
 };
