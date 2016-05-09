@@ -18,7 +18,7 @@
   ],
   "author": "Nate Murray <nate@fieldday.ag>",
   "dependencies": {
-    "regenerator": "~0.6.7"
+    "regenerator": "^0.8.45"
   },
   "peerDependencies": {
     "karma": ">=0.11.14"
